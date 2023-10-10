@@ -37,7 +37,7 @@ func init() {
 		dotY = 12
 	)
 
-	f, err := data.Open("data/wenquanyi_9pt.bdf.bin")
+	f, err := data.Open("data/facezh.bin")
 	if err != nil {
 		panic(err)
 	}

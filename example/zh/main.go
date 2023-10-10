@@ -65,6 +65,8 @@ sw:      Watu wote wamezaliwa huru, hadhi na haki zao ni sawa.
 tr:      Bütün insanlar hür, haysiyet ve haklar bakımından eşit doğarlar.
 uk:      Всі люди народжуються вільними і рівними у своїй гідності та правах.
 vi:      Tất cả mọi người sinh ra đều được tự do và bình đẳng về nhân phẩm và quyền.
+zh-Hans: 人人生而自由,在尊严和权利上一律平等。他们赋有理性和良心,并应以兄弟关系的精神相对待。
+zh-Hant: 人人生而自由，在尊嚴和權利上一律平等。他們賦有理性和良心，並應以兄弟關係的精神相對待。
 `
 
 	if *flagTest {
