@@ -1,4 +1,4 @@
-module github.com/hajimehoshi/bitmapfont/v3
+module github.com/interfacekun/bitmapfont/v3
 
 go 1.16
 

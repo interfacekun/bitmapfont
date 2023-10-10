@@ -25,7 +25,7 @@ import (
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
 
-	"github.com/hajimehoshi/bitmapfont/v3/internal/bitmap"
+	"github.com/interfacekun/bitmapfont/v3/internal/bitmap"
 )
 
 func init() {
