@@ -12,14 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:build chinese
-// +build chinese
+//// go:build chinese
+//// +build chinese
 
 package bitmapfont
 
 import (
 	"compress/gzip"
-	"fmt"
 	"io/ioutil"
 
 	"golang.org/x/image/font"
@@ -43,10 +42,6 @@ func init() {
 	}
 	defer f.Close()
 
-	info, err := f.Stat()
-	if err != nil {
-		panic(err)
-	}
 	defer f.Close()
 
 	s, err := gzip.NewReader(f)
