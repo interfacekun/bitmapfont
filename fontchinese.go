@@ -19,6 +19,7 @@ package bitmapfont
 
 import (
 	"compress/gzip"
+	"fmt"
 	"io/ioutil"
 
 	"golang.org/x/image/font"
@@ -42,6 +43,12 @@ func init() {
 	}
 	defer f.Close()
 
+	info, err := f.Stat()
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+
 	s, err := gzip.NewReader(f)
 	if err != nil {
 		panic(err)
@@ -52,6 +59,8 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
+
+	fmt.Printf("bits header:%v %d\n", info.Size(), len(bits))
 
 	FaceChinese = bitmap.NewFace(bitmap.NewBinaryImage(bits, imageWidth, imageHeight), fixed.I(dotX), fixed.I(dotY), true)
 }

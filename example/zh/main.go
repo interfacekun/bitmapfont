@@ -16,6 +16,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"image"
 	"image/color"
 	"image/draw"
@@ -161,6 +162,7 @@ func outputImageFile(text string, grid bool, path string, presentation bool) err
 			}
 		}
 		d.Dot.X = fixed.I(offsetX)
+		fmt.Printf("draw string:%s\n", l)
 		d.DrawString(l)
 		d.Dot.Y += f.Metrics().Height
 	}
