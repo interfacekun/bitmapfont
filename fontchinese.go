@@ -60,8 +60,6 @@ func init() {
 		panic(err)
 	}
 
-	fmt.Printf("bits header:%v %d\n", info.Size(), len(bits))
-
 	FaceChinese = bitmap.NewFace(bitmap.NewBinaryImage(bits, imageWidth, imageHeight), fixed.I(dotX), fixed.I(dotY), true)
 }
 
